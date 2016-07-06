@@ -4,27 +4,110 @@
     <meta charset="UTF-8">
     <title>王超--个人简历</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/responsive.css">
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Resume</h1>
-      <h2 class="project-tagline">my resume</h2>
-      <a href="https://github.com/charlottelily/resume" class="btn">View on GitHub</a>
-      <a href="https://github.com/charlottelily/resume/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/charlottelily/resume/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
-
-    <section class="main-content">
-      <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>我是测试</p>
-
-
-  
+    <div id="resume" class="resume">
+      <div class="resume-person">
+        <h1>简<i class="resume-round"></i>历</h1>
+        <h2>王超</h2>
+        <span class="resume-person-tel"><i></i>18701127345</span>
+        <a class="resume-person-mail" href=""><i></i>hotstrap99@outlook.com</a>
+        <dl>
+          <dt class="resume-person-dt fore1">应聘</dt>
+          <dd class="resume-person-position">前端开发工程师</dd>
+          <dt class="resume-person-dt fore2">期望薪资</dt>
+          <dd class="resume-person-salary">8K~15K</dd>
+          <dt class="resume-person-dt fore2">工作经验</dt>
+          <dd class="resume-person-exp">1年</dd>
+        </dl>
+      </div>
+      <div class="resume-exp">
+        <div class="resume-exp-bg"></div>
+        <ul>
+          <li class="resume-exp-skill">
+            <h4>技能掌握<i class="resume-round"></i></h4>
+            <div>
+              <p>
+                熟悉<span class="resume-high-light">HTML5 WebSocket、WebStorage</span>等新特性，
+                熟悉<span class="resume-high-light">CSS3</span>动画<br/>
+                熟悉js面向对象编程，对组件化开发略有了解<br/>
+                熟悉<span class="resume-high-light">angular</span>和<span class="resume-high-light">spa</span>开发<br/>
+                使用<span class="resume-high-light">jquery</span>封装过的dom效果插件<br/>
+                熟练使用<span class="resume-high-light">git</span>
+              </p>
+            </div>
+          </li>
+          <li class="resume-exp-practic">
+            <h4><i class="resume-round"></i>在校实践</h4>
+            <div>
+              <p>
+                <span class="resume-exp-title">2011.12～2013.5   大连交通大学校学生会 宣传部委员</span>
+                <span class="resume-exp-content">负责校级晚会、校级活动等的前期宣传、晚会的音视频播放等</span>
+              </p>
+              <p>
+                <span class="resume-exp-title">2013.4～2013.9 大连交通大学KAB俱乐部 项目运营部部长</span>
+                <span class="resume-exp-content">策划并负责大连交通大学第三届“启梦杯” 职业生涯规划大赛流程</span>
+                <span class="resume-exp-content">组织参加大连市“徒步大会”</span>
+              </p>
+            </div>
+          </li>
+          <li class="resume-exp-project">
+            <h4>个人项目<i class="resume-round"></i></h4>
+            <div>
+              <p>
+                <span class="resume-exp-title">2014.9～2014.12 网上书店系统的开发</span>
+                <span class="resume-exp-content">采用java、struts2，实现充值与支付等功能</span>
+              </p>
+              <p>
+                <span class="resume-exp-title">2015.4～2015.6 人事资源管理系统的开发</span>
+                <span class="resume-exp-content">采用C# 实现的WCF系统，实现按权限登录、数据导出等功能</span>
+              </p>
+            </div>
+          </li>
+          <li class="resume-exp-work">
+            <h4><i class="resume-round"></i>实习经验</h4>
+            <div>
+              <p>
+                <span class="resume-exp-title">2015.9～2016.1 悦野生活传媒科技（北京）有限公司 前端开发实习生</span>
+                <span class="resume-exp-content">负责页面的交互效果，采用jquery进行开发包括轮播图、tab切换、无限加载、分页等dom效果。</span>
+              </p>
+              <p>
+                <span class="resume-exp-title">2016.1～2016.5 度昂车仆科技有限公司 前端开发工程师</span>
+                <span class="resume-exp-content">采用angular开发汽车配件商城，搭建mvc架构，与后台配合绑定数据、渲染页面等。</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="resume-tag">
+        <div class="resume-tag-bg"></div>
+        <h2 class="resume-tag-title">个人标签<i class="resume-round"></i></h2>
+        <div>
+          <span class="resume-tag-fore1">静如瘫痪</span>
+          <span class="resume-tag-fore2">动如癫狂</span>
+          <span class="resume-tag-fore3">喜欢挑战</span>
+          <span class="resume-tag-fore4">泪点低</span>
+          <span class="resume-tag-fore5">风暴迷</span>
+        </div>
+      </div>
+      <!-- <div class="resume-product">
+        <div class="resume-product-bg"></div>
+        <h2 class="resume-product-title">作品链接<i class="resume-round"></i></h2>
+        <ul>
+          <li><a class="resume-product-fore1" href="" title="蠢蛋蛋项目1号">管理员后台</a><i class="resume-round"></i></li>
+          <li><a href="resume-product-fore2" title="蠢蛋蛋项目1号">页面网站</a><i class="resume-round"></i></li>
+          <li><a href="resume-product-fore3" title="蠢蛋蛋项目1号">分页插件</a><i class="resume-round"></i></li>
+          <li><a href="resume-product-fore4" title="蠢蛋蛋项目1号">spa应用</a><i class="resume-round"></i></li>
+        </ul>
+      </div>
+      <div class="resume-download">
+        <a class="resume-download-pdf" href="file/王超-前端开发工程师-简历.pdf" title="pdf简历下载">pdf简历下载</a>
+        <a class="resume-download-doc" href="file/王超-前端开发工程师-简历.docx" title="word简历下载">word简历下载</a>
+        <a class="resume-download-zip" href="file/王超-前端开发工程师-作品集.zip" title="作品集下载">作品集下载</a>
+      </div> -->
+    </div>
   </body>
 </html>
