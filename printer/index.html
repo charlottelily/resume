@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+		<div class="test"></div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/print.js"></script>
+
+		<script>
+			
+			$(function (){
+				$('.test').print({
+					'str' : 'ccccc',
+					'delLength' :3
+				});
+			});
+		</script>
+</body>
+</html>
