@@ -1,0 +1,342 @@
+/* @section reset 
+--------------------------------------*/
+html, body, div {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/* @section layout 
+--------------------------------------*/
+.section {
+	position: relative;
+	overflow: hidden;
+}
+.section1 {
+	background-color: #FEDA89;
+}
+.section2 {
+	background-color: #DE4F50;
+}
+.section3 {
+	background-color: #904A68;
+}
+.section4 {
+	background-color: #68C39F;
+}
+/* @section section1
+--------------------------------------*/
+  .section1 .content-box {
+ 		position: absolute;
+ 		top: 50%;
+ 		left: 50%;
+ 		margin-top: -200px;
+ 		margin-left: -250px;
+		width: 500px;
+		height: 400px;
+  }
+  .ui {
+ 		display: block;
+ 		position: absolute;
+  }
+  .ui.wheel-1 {
+	 	top: 0;
+	 	left: 0;
+	 	width: 172px;
+	 	height: 172px;
+		background-image : url('../imgs/wheel_1.png');
+  }
+  .ui.wheel-2 {
+
+	 	top: 0;
+ 		right: 0;
+  	width: 66px;
+ 		height: 66px;
+		background-image : url('../imgs/wheel_2.png');
+  }
+  .ui.wheel-3 {
+  	z-index: 5;
+  	right: 0;
+ 		bottom: 36px;
+	 	width: 96px;
+ 		height: 96px;
+		background-image : url('../imgs/wheel_3.png');
+  }
+  .ui.wheel-4 {
+  	z-index: 7;
+  	right: 40px;
+ 		bottom: 0;
+	 	width: 72px;
+ 		height: 72px;
+		background-image : url('../imgs/wheel_4.png');
+  }
+  .ui.cl {
+  	z-index: 6;
+  	bottom: 50px;
+  	left: 100px;
+  	width: 346px;
+  	height: 190px;
+		background-image : url('../imgs/cl.png');
+ 	}
+
+/* @section section2
+--------------------------------------*/
+  .ui.cloud {
+  	top: 50px;
+  	width: 586px;
+  	height: 156px;
+		background-image : url('../imgs/cloud.png');
+  }
+  .ui.map {
+  	top: 50%;
+  	left: 50%;
+  	margin-left: -206px;
+  	margin-top: -50px;
+   	width: 412px;
+   	height: 259px;
+		background-image : url('../imgs/map.png');
+  }
+  .ui.nail {
+		top: 50%;
+  	left: 50%;
+  	margin-left: 200px;
+  	margin-top: 40px;
+   	width: 160px;
+   	height: 193px;
+		background-image : url('../imgs/nail.png');
+  }
+
+/* @section section3
+--------------------------------------*/
+  .section3 .content-box {
+ 		position: absolute;
+ 		top: 50%;
+ 		left: 50%;
+ 		margin-top: -300px;
+ 		margin-left: -250px;
+		width: 500px;
+		height: 600px;
+  }
+  .ui.fun {
+  	top:60px;
+		left:98px;
+   	width: 304px;
+   	height: 138px;
+		background-image : url('../imgs/fun.png');
+  }
+   .ui.shop {
+ 	  z-index: 1;
+   	bottom: 70px;
+   	left: 92px;
+   	width: 344px;
+   	height: 284px;
+		background-image : url('../imgs/shop.png');
+  }
+   .ui.phone {
+   	bottom: 0;
+		width: 558px;
+		height:116px;
+		background-image : url('../imgs/v-phone.png');
+  }
+
+/* @section section4
+--------------------------------------*/
+	.section4 .content-box {
+ 		position: absolute;
+ 		top: 50%;
+ 		left: 50%;
+ 		margin-top: -300px;
+ 		margin-left: -250px;	
+		width: 500px;
+		height: 600px;
+	}
+   .ui.ballon {
+   	right: -100px;
+   	top: 0;
+   	width: 228px;
+   	height:445px;
+		background-image : url('../imgs/ballon.png');
+  }
+   .ui.roof {
+   	top: 170px;
+   	left: 99px;
+   	width: 220px;
+   	height: 105px;
+		background-image : url('../imgs/phone_1.png');
+		transform: rotate(30deg);
+		transform-origin: right bottom;
+  }
+   .ui.wall {
+   	z-index: 1;
+   	bottom: 50px;
+   	left: 110px;
+   	width: 200px;
+   	height: 277px;
+		background-image : url('../imgs/phone_2.png');
+  }
+   .ui.gift-big {
+   	z-index: 2;
+   	bottom: 50px;
+   	right: 100px;
+   	width: 117px;
+   	height: 185px;
+		background-image : url('../imgs/gift_1.png');
+  }
+   .ui.gift-small {
+   	z-index: 3;
+   	bottom: 40px;
+   	right: 150px;
+   	width: 103px;
+   	height: 126px;
+		background-image : url('../imgs/gift_2.png');
+ }
+
+/* @section animation
+--------------------------------------*/
+	/* section1 */
+  .ui.wheel {
+	 	animation-duration: 5s;
+	 	animation-timing-function: linear;
+	 	animation-iteration-count: infinite;
+	 	animation-delay: 2s;
+  }
+  .wheel-1 {
+ 	 	animation-name: spin-turn1;
+  }
+  .wheel-2 {
+ 	 	animation-name: spin-turn3;
+  }
+  .wheel-4 {
+ 	 	animation-name: spin-turn2;
+  }
+
+	/* section2 */
+  .active .cloud {
+		animation-name: cloud;
+		animation-duration: 12s;
+		animation-timing-function: linear;
+ 		animation-iteration-count: infinite;
+  }
+  .active .nail {
+		animation-name: nail-active;
+		animation-duration: 4s;
+		animation-iteration-count: 1;
+  }
+  .active .nail.active {
+		animation-name: nail;
+		animation-duration: 2s;
+ 		animation-iteration-count: infinite;
+  }
+
+	/* section3 */
+  .active .fun {
+  	animation-name: fun;
+  	animation-duration: 4s;
+  }
+  .active .fun.active  {
+		animation-name: ballon;
+		animation-duration: 2s;
+ 		animation-iteration-count: infinite;
+  }
+  .active .shop {
+  	animation-name: shop;
+  	animation-duration: 4s;
+  }
+
+	/* section4 */
+  .active .roof {
+		animation-name: roof;
+		animation-duration: 4s;
+  }
+  .active .gift-big {
+		animation-name: gift-big;
+  	animation-duration: 2s;
+  }
+  .active .gift-small {
+		animation-name: gift-small;
+  	animation-duration: 2s;
+  }
+  .active .ballon {
+		animation-name: ballon-active;
+		animation-duration: 4s;
+ 		animation-iteration-count: 1;
+  }
+  .active .ballon.active  {
+		animation-name: ballon;
+		animation-duration: 2s;
+ 		animation-iteration-count: infinite;
+  }
+
+/* @section keyframes
+--------------------------------------*/
+@keyframes spin-turn1 {
+  100% {transform: rotate(1turn); }
+}
+ @keyframes spin-turn2 {
+  100% {transform: rotate(2turn); }
+}
+@keyframes spin-turn3 {
+  100% {transform: rotate(3turn); }
+}
+@keyframes cloud {
+		0% { transform:translateX(1400px);}
+	100% {transform:translateX(-586px);}
+}
+@keyframes nail-active {
+		0% { transform:translateY(-1200px);}
+	100% {transform:translateY(0);}
+}
+@keyframes nail {
+		0% { transform:translateY(0);}
+	 50% {transform:translateY(-10px);}
+	100% {transform:translateY(0);}
+}
+@keyframes fun {
+	0% {
+		transform:translateY(300px);
+		opacity: 0;
+	}
+	100% {
+		transform:translateY(0);
+		opacity: 1;
+	}
+}
+@keyframes shop {
+		0% { transform:translateY(-900px);}
+	100% {transform:translateY(0);}
+}
+
+@keyframes ballon-active {
+		0% { transform:translateY(1600px);}
+	100% {transform:translateY(0);}
+}
+@keyframes ballon {
+		0% { transform:translateY(0);}
+	 50% { transform:translateY(10px);}
+	100% {transform:translateY(0);}
+}
+@keyframes roof {
+		0% { transform: rotate(0);}
+	100% { transform: rotate(30deg);}
+}
+@keyframes gift-big {
+	0% {
+		transform:translateX(500px);
+		opacity: 0;
+	}
+	100% {
+		transform:translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes gift-small {
+	0% {
+		transform:translateX(-500px);
+		opacity: 0;
+	}
+	100% {
+		transform:translateX(0);
+	 	opacity: 1;
+	}
+}
+
