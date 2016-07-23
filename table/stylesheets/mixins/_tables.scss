@@ -1,0 +1,8 @@
+@mixin layerX($layer){
+  font-size: (20 - $layer * 2) px;
+  height: 8 * (8 - $layer) px;
+  &.icon {
+    height: (20 - $layer * 2) px;
+  }
+}
+

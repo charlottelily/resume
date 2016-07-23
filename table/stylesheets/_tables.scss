@@ -1,0 +1,52 @@
+table, .table {
+  &.container {
+
+    
+  }
+}     
+
+.table-container {
+  border: 1px solid $primary-grey-saturate;
+  @include center-block();
+  background-color: $primary-bluegrey-background;
+width: 920px;
+  .table {
+    // @include box-shadow(0 2px 2px 0 rgba(0,0,0,.2));
+    
+    .row-header {
+      border-bottom: 1px solid $primary-grey-main;
+      height: 48px;
+      font-weight:bold;
+
+      .header-td {
+        position: relative;
+        padding: 0 20px 0 10px;
+        text-align: center;
+      }
+    }
+
+    .row-item {
+     
+      &:nth-child(odd)
+        {
+        background-color:$primary-grey-saturate;
+        }
+
+      @at-root .table td {
+        width: 115px;
+        height: 48px;
+        font-size: $base-font;
+        line-height: 1.2;
+      }
+
+
+    }
+  }
+
+  
+  .highlight {
+    background-color: $primary-yellow-main;
+    @include border-radius($base-round-corner);
+  }
+
+}

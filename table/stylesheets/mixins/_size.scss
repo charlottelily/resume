@@ -1,0 +1,30 @@
+// Sizing shortcuts
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+@mixin block-size($width, $height) {
+  display: block;
+  @include size($width, $height);
+}
+
+@mixin block-square($size) {
+  display: block;
+  @include size($size, $size);
+}
+
+@mixin in-block($width, $height) {
+  display: inline-block;
+  @include size($width, $height);
+}
+
+@mixin in-block-square($size) {
+  display: inline-block;
+  @include size($size, $size);
+}

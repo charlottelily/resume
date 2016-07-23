@@ -1,0 +1,14 @@
+@mixin prefixes($property, $value, $prefixes:()){
+   @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property} : $value;
+   }
+
+  #{$property} : $value;
+}
+@mixin prefixesAll($property, $value){
+  #{'-webkit-'+$property} : $value;
+     #{'-mos-'+$property} : $value;
+      #{'-ms-'+$property} : $value;
+       #{'-o-'+$property} : $value;
+             #{$property} : $value;
+}

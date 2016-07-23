@@ -1,0 +1,39 @@
+
+.btn-sort-box {
+  position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -12px;
+  @include square(24px);
+
+  .btn {
+    padding: 0;
+    @include block-size(24px,8px);
+    color: $primary-grey-dark;
+
+    &:focus, &:hover, &.active {
+      color:$primary-grey-black;
+    }
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  line-height: 1.2;
+  font-size: $button-normal-font;
+  border-radius: $base-round-corner;
+  cursor: pointer;
+
+  &.btn-apply, &.btn-add {
+    background-color: $primary-blue-main;
+    color: #fff;
+
+    &:hover, &:focus {
+      background-color: $primary-blue-saturate;
+    }
+
+    &.active {
+      background-color: $primary-blue-dark;
+    }
+  }
+}

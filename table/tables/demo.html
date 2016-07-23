@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table demo</title>
+	<link rel="stylesheet" href="../stylesheets/font-awesome.min.css">
+	<link rel="stylesheet" href="../stylesheets/main.css">
+
+</head>
+<body>
+	<h1>TABLE DEMO</h1>
+	<div class="table-container">
+		<div class="filter-container">
+		</div>
+		<table class="table">
+			<thead class="row-header"><div>
+					<td>
+						<div class="header-td" data-sort="name">
+							<span>Name</span>
+							<div class="btn-sort-box"><i class="btn btn-sort-up fa fa-caret-up"></i> <i class="btn btn-sort-down fa fa-caret-down"></i></div>
+						</div>
+					</td>
+					<td>
+						<div class="header-td" data-sort="nrcn">
+							NRCN.	
+							<div class="btn-sort-box"><i class="btn btn-sort-up fa fa-caret-up"></i> <i class="btn btn-sort-down fa fa-caret-down"></i></div>
+						</div>
+					</td>
+					<td>
+						<div class="header-td" data-sort="father"><span>Father's name</span>
+						<div class="btn-sort-box"><i class="btn btn-sort-up fa fa-caret-up"></i> <i class="btn btn-sort-down fa fa-caret-down"></i></div>
+						</div>
+					</td>
+					<td><div class="header-td" data-sort="mother">Mother's name<div class="btn-sort-box"><i class="btn btn-sort-up fa fa-caret-up"></i> <i class="btn btn-sort-down fa fa-caret-down"></i></div>
+						</div></td>
+					<td><div class="header-td" data-sort="ship">Permanent Township<div class="btn-sort-box"><i class="btn btn-sort-up fa fa-caret-up"></i> <i class="btn btn-sort-down fa fa-caret-down"></i></div>
+						</div></td>
+					<td><div class="header-td" data-sort="village"><span>Permanent Village</span><div class="btn-sort-box"><i class="btn btn-sort-up fa fa-caret-up"></i> <i class="btn btn-sort-down fa fa-caret-down"></i></div>
+						</div></td>
+					<td><div class="header-td" data-sort="address">Permanent Address<div class="btn-sort-box"><i class="btn btn-sort-up fa fa-caret-up"></i> <i class="btn btn-sort-down fa fa-caret-down"></i></div>
+						</div></td>
+					<td>Remove</td></div>
+			</thead>
+			<tr class="row-item">
+				<td>1</td>
+				<td>333</td>
+				<td>Michelle Kim</td>
+				<td>Amy Kusovsky</td>
+				<td>Township</td>
+				<td>1</td>
+				<td>permanent, John</td>
+				<td><a href="" class="btn btn-apply">APPLY</a></td>
+			</tr>
+
+			<tr class="row-item">
+				<td>3</td>
+				<td>111</td>
+				<td>Arcntisek Kim</td>
+				<td>John Kusovsky</td>
+				<td>Bownship</td>
+				<td>3</td>
+				<td>permanent, others</td>
+				<td><a href="" class="btn btn-apply">APPLY</a></td>
+			</tr>
+
+			<tr class="row-item">
+				<td>2</td>
+				<td>444</td>
+				<td>Arantisek Kusovsky</td>
+				<td>Kusovsky Arantisek</td>
+				<td>Bownship</td>
+				<td>2</td>
+				<td>permanent, others</td>
+				<td><a href="" class="btn btn-apply">APPLY</a></td>
+			</tr>
+
+			<tr class="row-item">
+				<td>6</td>
+				<td>888</td>
+				<td>Araneisek Kusovsky</td>
+				<td>Arantisek Kusovsky</td>
+				<td>Bownship</td>
+				<td>6</td>
+				<td>permanent, others</td>
+				<td><a href="" class="btn btn-apply">APPLY</a></td>
+			</tr>
+
+			<tr class="row-item">
+				<td>5</td>
+				<td>777</td>
+				<td>8768</td>
+				<td>Arantidek Kusovsky</td>
+				<td>Bownship</td>
+				<td>5</td>
+				<td>permanent, others</td>
+				<td><a href="" class="btn btn-apply">APPLY</a></td>
+			</tr>
+
+		</table>
+	</div>
+
+	<script src="../javascripts/jquery.js"></script>
+	<script src="../javascripts/table.js"></script>
+	<script>
+		+(function(factory){
+			factory(window, window.jQuery, document);
+		})(function(window, $, document){
+
+			$('.table-container .table').Table({
+				tHeader 		: '.row-header',
+				tBody 			: '.table tbody',
+				sortUp 			: '.btn-sort-up',
+				sortDown 		: '.btn-sort-down',
+				defaultSort : '[data-sort="nrcn"]',
+				defaultSortReverse: true
+			});
+		});
+	</script>
+</body>
+</html>
